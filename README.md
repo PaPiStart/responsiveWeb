@@ -1,9 +1,9 @@
-播助手官网平台http://www.bozhushou.com
+responsiveWeb 响应式布局DEMO
 ====
 
 ## 概述
 
-bozhushou 为播助手官网。
+responsiveWeb 响应式布局DEMO
 前端环境：
 	代码管理：git
 	开发环境：nodejs,npm,bower,gulp
@@ -12,7 +12,7 @@ bozhushou 为播助手官网。
 ## 开发
 
 ```
-git clone git@192.168.18.18:meixing/bozhushou.git
+git clone https://github.com/PaPiStart/responsiveWeb.git
 npm install -g bower
 npm install -g gulp
 npm install
@@ -35,7 +35,7 @@ npm install angular(工具包名) -save
 bower install jQuery(工具包名) -save
 -save 保存到本地(bower.json)
 
-(https://segmentfault.com/a/1190000002971135) bower入门教程
+https://segmentfault.com/a/1190000002971135 bower入门教程
 
 ```
 

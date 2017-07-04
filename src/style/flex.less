@@ -1,0 +1,207 @@
+@import 'reset';
+@charset "utf-8";
+/**
+ * flex css flex-box弹性盒模型Css样式
+ * 
+ * may
+ * 
+ */
+[layout="row"] {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+[layout="column"] {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+[flex-wrap="wrap"] {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.flex(@x, @y) {
+    justify-content: @x;
+    -webkit-justify-content: @x;
+    align-items: @y;
+    -webkit-align-items: @y;
+}
+
+[layout-align="space-between start"] {
+    .flex(space-between, flex-start);
+}
+
+[layout-align="space-between center"] {
+    .flex(space-between, center);
+}
+
+[layout-align="space-between end"] {
+    .flex(space-between, flex-end)
+}
+
+[layout-align="space-between stretch"] {
+    .flex(space-between, stretch)
+}
+
+[layout-align="space-around center"] {
+    .flex(space-around, center)
+}
+
+[layout-align="space-around stretch"] {
+    .flex(space-around, stretch)
+}
+
+[layout-align="center center"] {
+    .flex(center, center)
+}
+
+[layout-align="center start"] {
+    .flex(center, flex-start)
+}
+
+[layout-align="center end"] {
+    .flex(center, flex-end)
+}
+
+[layout-align="start center"] {
+    .flex(flex-start, center)
+}
+
+[layout-align="end center"] {
+    .flex(flex-end, center)
+}
+
+[layout-align="center space-around"] {
+    .flex(center, space-around)
+}
+//项目的长度。合法值："auto"、"inherit" 或一个后跟 "%"、"px"、"em" 或任何其他长度单位的数字。
+.flex-basis(@width) {
+    flex: 1 1 @width;
+    -webkit-flex: 1 1 @width;
+    max-width: @width;
+    max-height: 100%;
+}
+
+[flex] {
+    flex: 1;
+    -webkit-flex:1;
+}
+
+[flex="5"] {
+    .flex-basis(5%);
+}
+
+[flex="10"] {
+    .flex-basis(10%);
+}
+
+[flex="15"] {
+    .flex-basis(15%);
+}
+
+[flex="20"] {
+    .flex-basis(20%);
+}
+
+[flex="25"] {
+    .flex-basis(25%);
+}
+
+[flex="30"] {
+    .flex-basis(30%);
+}
+
+[flex="33"] {
+    .flex-basis(100% / 3);
+}
+
+[flex="35"] {
+    .flex-basis(35%);
+}
+
+[flex="40"] {
+    .flex-basis(40%);
+}
+
+[flex="45"] {
+    .flex-basis(45%);
+}
+
+[flex="50"] {
+    .flex-basis(50%);
+}
+
+[flex="55"] {
+    .flex-basis(55%);
+}
+
+[flex="60"] {
+    .flex-basis(60%);
+}
+[flex="65"] {
+    .flex-basis(65%);
+}
+
+[flex="70"] {
+    .flex-basis(70%);
+}
+[flex="75"] {
+    .flex-basis(75%);
+}
+[flex="80"] {
+    .flex-basis(80%);
+}
+[flex="85"] {
+    .flex-basis(85%);
+}
+[flex="90"] {
+    .flex-basis(90%);
+}
+[flex="95"] {
+    .flex-basis(95%);
+}
+//一个数字，规定项目将相对于其他灵活的项目进行扩展的量。
+.flex-grow(@grow){
+    flex-grow : @grow;
+    -webkit-flex-grow : @grow;
+}
+[flex-grow="1"]{
+    .flex-grow(1);
+}
+[flex-grow="2"]{
+    .flex-grow(2);
+}
+[flex-grow="3"]{
+    .flex-grow(3);
+}
+[flex-grow="4"]{
+    .flex-grow(4);
+}
+[flex-grow="5"]{
+    .flex-grow(5);
+}
+//一个数字，规定项目将相对于其他灵活的项目进行收缩的量。
+.flex-shrink(@shrink){
+    flex-shrink : @shrink;
+    -webkit-flex-shrink : @shrink;
+}
+[flex-shrink="1"]{
+    .flex-shrink(1);
+}
+[flex-shrink="2"]{
+    .flex-shrink(2);
+}
+[flex-shrink="3"]{
+    .flex-shrink(3);
+}
+[flex-shrink="4"]{
+    .flex-shrink(4);
+}
+[flex-shrink="5"]{
+    .flex-shrink(5);
+}

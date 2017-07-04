@@ -1,0 +1,27 @@
+{
+  "name": "bozhushou",
+  "description": "bozhushou",
+  "main": "gulpfile.js",
+  "authors": [
+    "may"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "git",
+    "bozhushou"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "vue": "^2.3.3",
+    "bootstrap": "3",
+    "swiper": "^3.4.2",
+    "animate.css": "^3.5.2"
+  }
+}

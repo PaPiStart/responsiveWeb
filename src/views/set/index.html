@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>set</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function(){
+          
+            //方法一
+            // var newArr  = [];
+            // arr.sort();
+            // for (let i = 0 , len = arr.length ; i < len; i++) {
+            //     if(arr[i] != arr[i + 1]){
+            //         newArr.push(arr[i]);
+            //     }
+            // }
+            //方法二
+            var arr = [1,2,3,4,2,3,1,5,14,5,1,45,9,95,2,5,5,2,2,1151,15,10,1,1,1,2,5];
+            var newArr = new Set(arr);
+            // for (let i = 0 , len = arr.length ; i < len; i++) {
+            //     newArr.add(arr[i]);
+            // }
+            console.log(newArr);
+        };
+    </script>
+</body>
+</html>

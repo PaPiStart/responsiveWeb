@@ -1,0 +1,112 @@
+.left-menu {
+	width: 260px;
+	float: left;
+	position: relative;
+}
+
+.left-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.left-menu ul li {
+	width: 259px;
+	border-bottom: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	display: block;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.left-menu ul li:first-child{
+	border-top: 1px solid #D0D0D0;
+}
+
+.left-menu ul li a {
+	width: 254px;
+	height: 46px;
+	margin-left: 6px;
+	display: block;
+	line-height: 46px;
+	text-indent: 20px;
+	float: left;
+	text-decoration: none;
+	color: #000000;
+	font-size: 13px;
+	background: #ffffff;
+	position: relative;
+	overflow: hidden;
+}
+
+.left-menu-icon2 {
+	width: 14px;
+	height: 8px;
+	float: right;
+	margin-top: 18px;
+	margin-right: 20px;
+}
+
+.left-menu a  img{
+	position: absolute;
+	top: 16px;
+	right: 8px;
+	width: 8px;
+	height: 14px;
+}
+
+.left-menu>ul>li.active>a,
+.left-menu>ul>li:hover>a{
+	background-color: #d0d0d0;
+}
+
+.submenu {
+	width: 260px;
+	border-top: 1px solid #FFFFFF;
+	position: relative;
+	float: left;
+	display: none;
+}
+
+.left-menu .submenu li {
+	width: 259px;
+	border: 1px solid #d0d0d0;
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+.submenu li a {
+	width: 260px;
+	height: 46px;
+	line-height: 46px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	font-size: 11px;
+	text-indent: 24px;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.submenu li a img {
+	position: absolute;
+	top: 16px;
+	right: 8px;
+	width: 8px;
+	height: 14px;
+}
+
+.submenu li:hover {
+	background-color: #d0d0d0;
+}
+
+.selected-color{
+	background: #d0d0d0 !important;
+}
+
+.submenu li:hover>a {
+	background-color: #d0d0d0;
+}

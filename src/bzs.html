@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="">
+    <meta name="description" content="播助手软件让主播和成千上万迫切希望投放广告的公司合作。只需要直播时接个广告，收入报表每时每刻告诉主播赚了多少银子。广告大厅有三种不同类型的广告任务共主播挑选，为主播创造收益，实现流量变现。">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>播助手-为主播服务-直播推流软件</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/flex.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/new.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/alicdn.css"> -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body style="height: 100%;overflow: hidden">
+    <div class="loading" layout="row" layout-align="center center" flex>
+        <img src="images/loading.gif" alt="">
+    </div>
+    <div class="loading-show">
+<!--     <div class="imglist" style="display: none;">
+        <img src="/images/arrow.png">
+        <img src="/images/bg.png">
+        <img src="/images/blue_hovering.png">
+        <img src="/images/blue_nor.png">
+        <img src="/images/btn_back.png">
+        <img src="/images/btn_play.png">
+        <img src="/images/computer.png">
+        <img src="/images/connect.png">
+        <img src="/images/login_logo.png">
+        <img src="/images/logo.png">
+        <img src="/images/logo2.png">
+        <img src="/images/plugin_1.png">
+        <img src="/images/plugin_2.png">
+        <img src="/images/plugin_3.png">
+        <img src="/images/plugin_4.png">
+        <img src="/images/plugin_5.png">
+        <img src="/images/studio_1.png">
+        <img src="/images/studio_2.png">
+        <img src="/images/studio_3.png">
+        <img src="/images/studio_4.png">
+        <img src="/images/studio_5.png">
+        <img src="/images/txt_01.png">
+        <img src="/images/txt_plugin.png">
+        <img src="/images/white_hovering.png">
+        <img src="/images/studio_2.png">
+        <img src="/images/white_nor.png">
+        <img src="/images/foot.jpg">
+        <img src="/images/hey1.jpg">
+        <img src="/images/p5_bg.jpg">
+        <img src="/images/pre.jpg">
+    </div> -->
+    <div class="arrow"></div>
+<!-- 
+    <div id="top_nav">
+        <div class="content">
+            <a href="index.html" id="logo"></a>
+         <a data-index=3 href="javascript:;" class="top_link_left active">广告案例</a>
+            <a data-index=5 href="javascript:;" class="top_link_left">软件下载</a>
+            <a data-index=6 href="javascript:;" class="top_link_left">联系我们</a>
+            <div class="search">
+                <div class="search_left">
+                    <input class="search_txt" type="text" placeholder="广告背后的故事：飘逸楠楠">
+                    <button class="btn" onclick="alert('功能即将开放！')"><i class="iconfont icon-sousuo"></i></button>
+                </div>
+                <div class="search_right">
+                   <a href="http://tieba.baidu.com/p/4909816586" target="_blank" style="padding: 0 28px; margin-left: 15px;" class="top_link_left">论坛</a>
+                   <a style="padding: 0" onclick="goLogin()">商务合作</a> 
+               </div>
+           </div>  
+       </div>
+   </div> -->
+   <header id="bzs-nav">
+    <div class="bzs-nav container" layout="row" flex>
+        <div layout="row" layout-align="space-between center" flex>
+            <a href="http://www.bozhushou.com/" layout="row" layout-align="center center"><img src="images/logo.png" alt=""></a>
+            <span class="hidden-xs col-sm-2 col-md-4"></span>
+            <div class="list" layout="row" flex>
+                <span class="mask"></span>
+                <button type="button" class="removeIcon">
+                    <span class=" glyphicon glyphicon-remove" aria-hidden="true"></span>
+
+                </button>
+
+                <ul class="nav-item" layout="row" layout-align="space-around center" flex>
+                    <li data-index=0>首页</li>
+                    <li class="defaultClick" onclick="window.location.href='http://www.bozhushou.com/bzs.html'">经典案例</li>
+                    <li data-index=7>软件下载</li>
+                    <li class="defaultClick" onclick="window.open('http://www.bozhushou.com/help/index.html','_blank')">使用帮助</li>
+                    <li data-index=8>联系我们</li>
+                    <li class="defaultClick" id="join-me" data-toggle="modal" data-target="#myModal">商务合作</li>
+                </ul>
+            </div>
+            <div class="showBtn">
+                <button type="button" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<ul id="slider">
+    <li class="p1 current">
+        <!-- <div class="play_btn" id="off_btn"></div> -->
+        <div id="bg2">
+            <div layout="row" layout-align="center center" flex class="title">
+                <img src="images/play.png" class="play-img" style="display:none;">
+            </div>
+            <span class="video-mask" ></span>
+         <!--    <div class="content autoWidth">
+                <div class="layerout_left pre-left">
+                    <div class="layerout pre-btn">
+                        <img class="" src="video/txt_01.png" alt="">
+                        <div class="play_btn"></div>
+                    </div>
+                </div>
+            </div> -->
+            <video class="video video0"  src="video/ad_01.mp4"  autoplay="autoplay">您的浏览器不支持video标签，建议更新浏览器版本</video>
+            <!-- <video class=" video video0" src="video/bozhushou.mp4"  autoplay="autoplay"></video> -->
+        </div>
+        
+    </li>
+<!--     <li class="p2">
+        <div id="bg2">
+            <div class="video_box">
+                <video class="ad_video" src="video/ad_01.mp4" autoplay="" loop=""></video>
+            </div>
+        </div>
+    </li> -->
+    <li class="p3">
+        <div id="bg3">
+         <div layout="row" layout-align="center center" flex class="title">
+            <img src="images/play.png" class="play-img">
+        </div>
+        <span class="video-mask"></span>
+        <!-- <div class="video_box"> -->
+        <video class="video video1" src="video/ad_02.mp4"  loop=""></video>
+        <!-- <video class=" video video1" src="video/bozhushou.mp4"  loop=""></video> -->
+        <!-- </div> -->
+    </div>
+</li>
+<li class="p6">
+    <div id="bg6">
+     <div layout="row" layout-align="center center" flex class="title">
+        <img src="images/play.png" class="play-img">
+    </div>
+    <!-- <div class="video_box"> -->
+    <span class="video-mask"></span>
+    <video class="video video2" src="video/ad_03.mp4"  loop=""></video>
+    <!-- <video class=" video video2" src="video/bozhushou.mp4"  loop=""></video> -->
+</div>
+<!-- </div> -->
+</li>
+<li class="p7">
+    <div id="bg7">
+     <div layout="row" layout-align="center center" flex class="title">
+        <img src="images/play.png" class="play-img">
+    </div>
+    <!-- <div class="video_box"> -->
+    <span class="video-mask"></span>
+    <video class=" video video3" src="video/ad_04.mp4"  loop=""></video>
+    <!-- <video class=" video video3" src="video/bozhushou.mp4"  loop=""></video> -->
+    <!-- </div> -->
+</div>
+</li>
+   <!--  <li class="p4">
+        <div id="bg4">
+            <div class="content autoWidth">
+                <div class="layerout_left">
+                    <div class="layerout">
+                        <video src="video/he.mp4" autoplay="" loop="" style="position: absolute; top: -160px; right: 0; bottom: 0; left: 0; margin: auto;"></video>
+                            <div class="layer1"></div>
+                            <div class="layer2"></div>
+                            <div class="layer3"></div>
+                            <div class="layer4"></div>
+                            <div class="layer5"></div>
+                        </div>
+                    </div>
+                    <div class="layerout_right">
+                        <div class="layerout">
+                            <img class="" src="video/txt_plugin.png" alt="">
+                            <a href="http://www.bozhushou.com/heyad/download/download.php" class="down_btn" style="margin: 100px 0 0 -27px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> -->
+<!--         <li class="p5">
+            <div id="bg5">
+                <div class="content autoWidth">
+                    <div class="layerout_right">
+                        <div class="layerout">
+                            <img class="" src="video/connect.png" alt="">
+                            <div class="connect">
+                                <div class="connect_us"><span>联系我们</span><div style="display: inline-block; vertical-align: middle;"><p style="margin-bottom: 10px;">QQ:3525914683</p><p>Email:pr@hey.show</p></div></div>
+                                <p class="about"><span>相关产品</span><a style="margin-right: 15px;" href="http://www.bozhushou.com/"><img src="images/youxibobo.png"></a><a href="http://www.heyad.tv/"><img src="images/heyad.png"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer"></div>
+            </div>
+        </li> -->
+    </ul>
+    <ul id="nav">
+        <li class="current">
+            <a href="javascript:;"></a>
+        </li>
+        <li>
+            <a href="javascript:;"></a>
+        </li>
+        <li>
+            <a href="javascript:;"></a>
+        </li>
+        <li>
+            <a href="javascript:;"></a>
+        </li>
+      <!--   <li>
+            <a href="javascript:;"></a>
+        </li> -->
+      <!--   <li>
+            <a href="javascript:;"></a>
+        </li> -->
+       <!--  <li>
+            <a href="javascript:;"></a>
+        </li> -->
+    </ul>
+<!--     <div id="login_page">
+        <div class="main">
+            <div class="close_login">
+                <i class="iconfont icon-tubiaozitihua03"></i>
+                <img src="images/close.png" alt="">
+            </div>
+
+            <form action="save.php" method="post" onsubmit="return validate();">
+                <h1>“大家镇定一下，我们要出来了”</h1>
+                <h3>播助手订单发布系统V2.0即将上线</h3>
+                <p class="p_logo"><img src="images/login_logo.png"><span>&nbsp;&nbsp;|&nbsp;&nbsp;为主播服务</span></p>
+                <p class="tip">请留下联系方式，让我们能联系你</p>
+                <p class="p_input"><input type="text" name="company" placeholder="公司"></p>
+                <p class="p_input"><input type="text" name="name" placeholder="姓名"></p>
+                <p class="p_input"><input type="text" name="phone" placeholder="电话"></p>
+                <p><textarea class="tips" name="memo" placeholder="备注说明"></textarea></p>
+                <p><button class="submit_btn">提交</button></p>            
+            </form>
+        </div>
+    </div> -->
+</div>
+</body>
+<!-- <script src="lib/172.js"></script> -->
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/header.js"></script>
+<script src="lib/new.js"></script>
+</html>

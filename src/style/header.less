@@ -1,0 +1,87 @@
+    header#bzs-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.38);
+        width: 100%;
+        z-index: 99;
+        height: 80px;
+        .bzs-nav {
+            height: 100%;
+            .list {
+                &.in {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    transition: all .3s;
+                    z-index: 99;
+                    .removeIcon {
+                        display: inherit;
+                        position: absolute;
+                        z-index: 9999;
+                        top: 25px;
+                        right: 15px;
+                        display: block;
+                    }
+                    .mask {
+                        position: fixed;
+                        background-color: rgba(0, 0, 0, .38);
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    ul.nav-item {
+                        width: 200px;
+                        background: rgba(0, 0, 0, .7);
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        margin: 0;
+                        padding-top: 70px;
+                        z-index: 999;
+                        li {
+                            padding: 10px 0 10px 40px;
+                            width: 100%;
+                        }
+                    }
+                }
+                &.out {
+                    right: -600px;
+                }
+                ul.nav-item {
+                    margin-left: 5%;
+                    li {
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .showBtn,
+        .removeIcon {
+            display: none;
+        }
+        button,
+        .removeIcon {
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+            outline: none;
+            font-size: 20px;
+        }
+    }
+    @media screen and(max-width:600px) {
+        header#bzs-nav {
+            .bzs-nav {
+                .list {
+                    position: fixed;
+                    right: -600px;
+                }
+                .showBtn {
+                    display: block;
+                }
+            }
+        }
+    }

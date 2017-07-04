@@ -1,0 +1,20 @@
+{
+	"windows": {
+		"major": 0,
+		"minor": 0,
+		"patch": 5,
+		"built": "pro",
+		"updateUrl": "http://www.bozhushou.com/heybo/download/update/update.zip",
+		"download": "offline/Beta/BoZhuShou_0.1.2.exe",
+		"force": "1"
+	},
+	"contact":{
+		"publishdate": "2017-05-19",
+		"website": "www.bozhushou.com",
+		"email": "info@hey.show",
+		"phone": "18627948335",
+		"qq": "482215244",
+		"qqQunUrl": "tencent://groupwpa/?subcmd=all&param=7B2267726F757055696E223A3438323231353234342C2274696D655374616D70223A313438303932363439357D0A"
+	},
+	"description": "最新版本0.1.1：\n\n性能优化、BUG修复；\n默认场景模板的图片优化；\n优化界面若干；"
+}

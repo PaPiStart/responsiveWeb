@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://www.ciscik.com/course-down1.html -->
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>
+        播助手安装教程
+    </title>
+    <meta content='播助手"' name="title">
+    <meta content="播助手" name="Keywords">
+    <meta content="播助手" name="Description">
+    <link href="./css/public.css" rel="stylesheet">
+    <link href="./css/left-menu.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/reset.css">
+    <link rel="stylesheet" type="text/css" href="../style/flex.css">
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/header.css">
+    <script src="./js/hm.js">
+    </script>
+    <script src="./js/jquery-1.11.2.min.js" type="text/javascript">
+    </script>
+    <script src="./js/common.js" type="text/javascript">
+    </script>
+    <script type="text/javascript" src="../lib/header.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+</link>
+</meta>
+</meta>
+</meta>
+</meta>
+</meta>
+</head>
+<body>
+    <header id="bzs-nav">
+        <div class="bzs-nav container" layout="row" flex>
+            <div layout="row" layout-align="space-between center" flex>
+                <a href="http://www.bozhushou.com/" layout="row" layout-align="center center"><img src="../images/logo.png" alt=""></a>
+                <span class="hidden-xs col-sm-2 col-md-4"></span>
+                <div class="list" layout="row" flex>
+                    <span class="mask"></span>
+                    <button type="button" class="removeIcon">
+                        <span class=" glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav-item" layout="row" layout-align="space-around center" flex>
+                        <li data-index=0>首页</li>
+                        <li class="defaultClick" onclick="window.location.href='http://www.bozhushou.com/bzs.html'">经典案例</li>
+                        <li data-index=7>软件下载</li>
+                        <li class="defaultClick" onclick="window.open('http://www.bozhushou.com/help/index.html','_blank')">使用帮助</li>
+                        <li data-index=8>联系我们</li>
+                        <li class="defaultClick" id="join-me" data-toggle="modal" data-target="#myModal">商务合作</li>
+                    </ul>
+                </div>
+                <div class="showBtn">
+                    <button type="button" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div style="height:100px;">
+
+    </div>    <div class="content">
+    <div class="left">
+    </div>
+    <div class="right">                
+    </div>
+    <div class="clear-both">
+    </div>
+</div>
+<div class="go-top" style="display: none;">
+    <img src="images/common_btn_gotop.png">
+</img>
+</div>
+<script src="js/index.js">
+</script>
+<script type="text/javascript">
+    $(function(){
+        $('.nav-item li').on('click', function(e) {
+  //取消事件的默认动作。
+  e.preventDefault();
+  if($(this).hasClass('defaultClick')) {
+    return;
+}
+var i = $(this).attr('data-index');
+window.location.href="http://bozhushou.com/index.html?index=" + i;
+});
+    });
+</script>
+</body>
+</html>

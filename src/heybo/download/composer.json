@@ -1,0 +1,12 @@
+{
+    "name": "admin/bzs",
+    "authors": [
+        {
+            "name": "felix",
+            "email": "felix@1201.us"
+        }
+    ],
+    "require": {
+        "ixudra/curl": "6.*"
+    }
+}

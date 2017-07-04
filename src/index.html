@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<!-- 国产浏览器默认采用高速模式渲染页面 -->
+	<meta name="renderer" content="webkit">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="author" content="" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="播助手(www.bozhushou.com),主播和成千上万迫切希望投放广告的公司合作。
+	只需要直播时接个广告，收入报表每时每刻告诉主播赚了多少银子。广告大厅有三种不同类型的广告任务共主播挑选，为主播创造收益，实现流量变现。">
+	<meta name="keywords" content="直播推流软件、播助手、网红推手、直播推手" />
+	<title>
+		播助手-为主播服务-直播推流软件
+	</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/flex.css">
+	<link rel="stylesheet" type="text/css" href="style/bozhushou.min.css">
+	<link rel="stylesheet" type="text/css" href="style/header.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+
+<body class="index">
+	<div class="loading" layout="row" layout-align="center center" flex>
+		<img src="images/loading.gif" alt="">
+	</div>
+	<!-- header -->
+	<header id="bzs-nav" class="loading-show">
+		<div class="bzs-nav container" layout="row" flex>
+			<div layout="row" layout-align="space-between center" flex>
+				<a href="http://www.bozhushou.com/" layout="row" layout-align="center center"><img src="images/logo.png" alt=""></a>
+				<span class="hidden-xs col-sm-2 col-md-4"></span>
+				<div class="list" layout="row" flex>
+					<span class="mask"></span>
+					<button type="button" class="removeIcon">
+						<span class=" glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+					<ul class="nav-item" layout="row" layout-align="space-around center" flex>
+						<li data-index=0>首页</li>
+						<li class="defaultClick" onclick="window.location.href='http://www.bozhushou.com/bzs.html'">经典案例</li>
+						<li data-index=7>软件下载</li>
+						<li class="defaultClick" onclick="window.open('http://www.bozhushou.com/help/index.html','_blank')">使用帮助</li>
+						<li data-index=8>联系我们</li>
+						<li class="defaultClick" id="join-me" data-toggle="modal" data-target="#myModal">商务合作</li>
+					</ul>
+				</div>
+				<div class="showBtn">
+					<button type="button" aria-label="Left Align">
+						<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header -->
+	<div class="swiper-container swiper-container-vertical loading-show">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide page1 page" layout="row">
+				<div layout="column" layout-align="center center" flex class="title">
+					<div layout="row" layout-align="center center"  >
+						<img src="images/title.png" class="title-img">
+						<img src="images/play.png" class="play-img">
+					</div>
+					<style type="text/css" media="screen">
+						.download{
+							color: #fff;
+							border: 2px solid #fff;
+							border-radius: 10px;
+							padding: 10px 51px;
+							margin-top: 20px;
+							display:none;
+						}
+						.download:hover{
+							color:#fff;
+							text-decoration: none;
+							transform: translateY(5px);
+						}
+					</style>
+					<a href="http://www.bozhushou.com/heybo/download/download.php" class="download">
+						点击下载播助手
+					</a>
+				</div>
+				<span class="video-mask video-mask-show"></span>
+				<video src="video/bozhushou.mp4" autoplay controls="controls" class="video animated bounceInUp" id="video">
+					<div layout="row" layout-align="center center" flex>
+						您的浏览器不支持播放视频，推荐使用下载最新浏览器。
+						<a href="http://rj.baidu.com/soft/detail/14744.html?ald">下载</a>
+					</div>
+				</video>
+			</div>
+			<div class="swiper-slide page2  " layout="row">
+				<div layout="row" layout-align="center center" flex class=" page2-top">
+				<!-- 	<div class="TV" layout="row" layout="center center" >
+						<img src="images/TV.png" alt="">
+					</div> -->
+					<div layout="column" layout-align="center center" flex class="content animate-box animated bounceInUp" >
+						<img src="images/TV.png" alt="" class="TV">
+						<!-- <span flex="30" class="flex-40" style="height:30%;width:1px;"></span> -->
+						<span class="text" >PRODUCT HIGHLIGHTS</span>
+						<div class="title">
+							<span class="label">产品亮点</span>
+						</div>
+						<div layout="row" layout="center center" flex class="img-list">
+							<div layout="column" layout-align="center center" data-index=2>
+								<img src="images/openPlay.png">
+								<label for="">一键开播</label>
+							</div>
+							<div layout="column" layout-align="center center" data-index=3>
+								<img src="images/setting.png">
+								<label for="">智能设置</label>
+							</div>
+							<div layout="column" layout-align="center center" data-index=4>
+								<img src="images/book.png">
+								<label for="">弹幕互动</label>
+							</div>
+							<div layout="column" layout-align="center center" data-index=5>
+								<img src="images/stable.png">
+								<label for="">稳定易用</label>
+							</div>
+							<div layout="column" layout-align="center center" data-index=6>
+								<img src="images/app.png">
+								<label for="">海量应用</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page3 page">
+				<div class="content" layout="row" layout-align="center center">
+					<div class="animate-box animated bounceInLeft col-md-6 col-sm-12 col-xs-12" layout="column">
+						<span class="title">一键开播</span>
+						<span class="text">登录播助手，绑定直播平台账号，选择画面模板，即可开始直播。轻松省时，简单快捷。</span>
+					</div>
+					<div class="animate-box animated bounceInRight col-md-6 col-sm-12 col-xs-12 col-md-6 col-sm-12 col-xs-12" flex layout-align="center center">
+						<img src="images/page2-left.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page4 page">
+				<div layout="row" layout-align="center center" class="content" flex-wrap="wrap">
+					<div class="animate-box animated bounceInLeft  col-md-6 col-sm-12 col-xs-12" flex layout-align="start center">
+						<img src="images/page4-left.png">
+					</div>
+					<div class="animate-box animated bounceInRight col-md-6 col-sm-12 col-xs-12" layout="column" layout-align="center end">
+						<span class="title">智能设置</span>
+						<span class="text">播助手根据主播的机器性能，网络条件自动设置好参数，主播无需手动配置。</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page5 page">
+				<div layout="row" layout-align="center center" class="content" flex-wrap="wrap">
+					<div class="animate-box animated bounceInLeft  col-md-6 col-sm-12 col-xs-12 " layout="column">
+						<span class="title">弹幕互动</span>
+						<span class="text">播助手自带各类弹幕应用：弹幕墙,弹幕查看一目了然，答谢土豪轻而易举。弹幕抽奖，弹幕投票—简单易用，设置灵活。</span>
+					</div>
+					<div class="animate-box animated bounceInRight col-md-6 col-sm-12 col-xs-12" flex layout-align="center center">
+						<img src="images/page5-left.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page6 page">
+				<div layout="row" layout-align="center center" class="content" flex-wrap="wrap">
+					<div class="animate-box animated bounceInLeft  col-md-6 col-sm-12 col-xs-12" flex layout-align="start center">
+						<img src="images/page6-left.png">
+					</div>
+					<div class="animate-box animated bounceInRight col-md-6 col-sm-12 col-xs-12" layout="column" layout-align="center end">
+						<span class="title">稳定易用</span>
+						<span class="text">专门针对国内网络和硬件环境进行优化，同时在易用性上不断改进，更符合国内主播使用习惯。</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page7 page">
+				<div layout="row" layout-align="center center" class="content" flex-wrap="wrap">
+					<div class="animate-box animated bounceInLeft  col-md-6 col-sm-12 col-xs-12" layout="column">
+						<span class="title">海量应用</span>
+						<span class="text">自带应用市场，好玩的，有趣的直播应用全部帮你找好了。平台开放，鼓励支持第三方开发者发布更多应用。</span>
+					</div>
+					<div class="animate-box animated bounceInRight col-md-6 col-sm-12 col-xs-12" flex layout-align="center center">
+						<img src="images/page7-left.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page8 page">
+
+				<div layout="row" layout-align="center center" class="content" flex-wrap="wrap">
+					<div class="animate-box animated bounceInLeft  col-md-6 col-sm-12 col-xs-12" layout="column">
+						<span class="title">下载播助手</span>
+						<span class="text">点击下载，立刻体验播助手带给您的直播新玩法，如在体验过程中遇到问题，欢迎您通过各种方式反馈问题，我们将尽快为您解决问题。</span>
+						<a href="http://www.bozhushou.com/heybo/download/download.php" class="download-img">
+							<img src="images/download.png">
+						</a>
+					</div>
+					<div class="animate-box animated bounceInRight col-md-6 col-sm-12 col-xs-12" flex layout-align="center center">
+						<img src="images/page8-left.png" class="page8-left">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page9 page">
+
+				<div class="page-bg">
+					<div class="map-img">
+						<img src="images/map.png">
+					</div>
+					<div class="foot-info">
+						<div layout="column">
+							<div class="about" layout="row">
+								<div class="brand-logo">
+									<img src="images/brand.png">
+								</div>
+								<div style="margin-left:2%;">
+									<span class="title">关于我们</span><br>
+									<span class="text">引力互动科技(武汉)有限公司，位于中国武汉光谷软件园，是行业领先的新媒体广告服务平台运营商。专注视频点播、直播等新媒体商业价值的挖掘，为中国大陆地区行业相关机构、组织和个人，建立影响力创造和价值创造之间的纽带，并为之提供相关的数据分析、技术支持和咨询服务。</span>
+								</div>
+							</div>
+							<div class="info" layout="row" layout-align="space-between start">
+								<div class="brand-list ">
+									<span class="title">相关产品</span>
+									<div class="brand-img">
+										<img src="images/bobo.png">
+										<img src="images/zhibo.png">
+										<img src="images/chajian.png">
+										<img src="images/bozhushou.png">
+										
+									</div>
+								</div>
+								<div class="" flex>
+									<span class="title">联系我们</span>
+									<div layout="row">
+										<div class="email-info">
+											<img src="images/email.png">
+											<span>pr@hey.show</span>
+										</div>
+										<div class="qq-info" style="margin-left:2%;">
+											<img src="images/QQ.png">
+											<span>3525914683</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="brandList">
+						<img src="images/jianfang.png">
+						<img src="images/huajiao.png">
+						<img src="images/yingke.png">
+						<img src="images/momo.png">
+						<img src="images/163.png">
+						<img src="images/tencent.png">
+						<img src="images/douyu.png">
+						<img src="images/YY.png">
+						<img src="images/longzhu.png">
+						<img src="images/xiongmao.png">
+						<img src="images/zhanqi.png">
+					</div>
+					<footer>
+						<span class="Copyright">引力互动科技(武汉)有限公司版权所有 鄂ICP备16016929号-1 Copyright &copy; 2015 - 2017 heyshow. All Rights Reserved.</span>
+					</footer>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Add Pagination -->
+		<!-- <div class="swiper-pagination"></div> -->
+		<!-- Add Navigation -->
+		<!--<div class="swiper-button-next swiper-button-white"></div>-->
+	</div>
+	<!-- Modal -->
+	<script type="text/javascript" src="lib/bozhushou.min.js"></script>
+	<script type="text/javascript" src="lib/header.js"></script>
+	<script type="text/javascript" src="lib/index.js"></script>
+</body>
+
+</html>
